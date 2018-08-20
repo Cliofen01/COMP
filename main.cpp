@@ -1,8 +1,9 @@
 #include <cstdlib>
 #include <iostream>
 #include <string.h>
-#include <studio>
 using namespace std;
+
+void LimpiarArreglo (int orden[]);
 
 int main()
 {
@@ -15,14 +16,11 @@ int main()
     int var3 = 0;
     int total = 0;
     int orden[25];
-    for (int cont = 0; cont<26;cont++)
-    {
-        orden[cont] = 0;    
-    }
-    cout<<"Introduzca algo: ";
-    cin>>cadena;
-    cout<<cadena<<"\n";
-
+    
+    LimpiarArreglo(orden);
+    cout<<"Introduzca algo:\n";
+    getline(cin, cadena);
+    
     for(int i = 0;i<=cadena.length();i++)
     {
 		var1 = 0;
@@ -60,17 +58,30 @@ int main()
 		}
 		
 	}
-    cout<<"El total de la suma de los numeros es = "<<total<<"\n\n";
+	
+    cout<<"El total de la suma de los numeros es = "<<total;
+    cout<<"\n";
+    cout<<"\n";
+    cout<<"Letras en orden alfabetico\n";
     
     for(int cont1 = 0;cont1<26;cont1++)
     {
         while(orden[cont1]>0)
         {
-             cout<<c[cont1]<<"\n";    
+             cout<<"   "<<c[cont1]<<"\n";    
              orden[cont1] = orden[cont1] - 1;  
          }
     }
     
-    system("PAUSE");
-    return EXIT_SUCCESS;
+    return 0;
 }
+
+void LimpiarArreglo (int orden[]){
+	for (int cont = 0; cont<26;cont++)
+    {
+        orden[cont] = 0;    
+    }
+	
+}
+
+
