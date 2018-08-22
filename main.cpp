@@ -5,6 +5,10 @@ using namespace std;
 
 void LimpiarArreglo (int orden[]);
 
+bool EsLetra(char c[], char caracter);
+
+bool EsNumero(char n[], char caracter); 
+
 int main()
 {
     string cadena;
@@ -23,6 +27,7 @@ int main()
     
     for(int i = 0;i<=cadena.length();i++)
     {
+    	/*
 		var1 = 0;
     	while (var1<26)
     	{
@@ -57,6 +62,34 @@ int main()
 			
 		}
 		
+		if(cadena[i] == " ")
+		{
+			
+		}
+		
+		*/
+		
+		if(EsLetra(c, cadena[i])) {
+			cout<<cadena[i]<<" es una letra\n";
+			orden[var1]++;
+		}
+		
+		else if(EsNumero(n, cadena[i])) {
+			cout<<cadena[i]<<" es un numero\n";
+			total = total + cadena[i] - '0'; 
+		}
+	
+		else if(isspace(cadena[i]))
+		{
+			cout<<"espacio\n";
+		}
+		
+		else
+		{
+			cout<<"Error, \'"<<cadena[i]<<"\' no es un caracter valido\n";
+			break;
+		}
+		
 	}
 	
     cout<<"El total de la suma de los numeros es = "<<total;
@@ -83,5 +116,28 @@ void LimpiarArreglo (int orden[]){
     }
 	
 }
+
+bool EsLetra(char c[], char caracter) {
+	for (int var1 = 0; var1< 26; var1++)
+	{
+		if(caracter == c[var1])
+    		{
+	    		return true;
+			}
+	}
+	return false;
+}
+
+bool EsNumero(char n[], char caracter) {
+	for (int var1 = 0; var1< 10; var1++)
+	{
+		if(caracter == n[var1])
+    		{
+	    		return true;
+			}
+	}
+	return false;
+}
+
 
 
