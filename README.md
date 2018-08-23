@@ -9,7 +9,7 @@ Diseñar un compilador en C++ que permita transformar desde un lenguaje fuente a
 
 
 # Lenguaje
-######Ventajas:
+###### Ventajas:
 
 - Lenguaje de programación orientado a objetos. 
 - Lenguaje muy didáctico, gracias a este lenguaje puedes aprender muchos otros lenguajes con gran facilidad, como C#, Java, Visual Basic, Javascript, PHP, entre otros. 
@@ -22,7 +22,7 @@ Diseñar un compilador en C++ que permita transformar desde un lenguaje fuente a
 
 
 
-######Desventajas: 
+###### Desventajas: 
 
 - Uso de DLLs (librerías dinámicas) muy complejo. Java y .Net han evolucionado estos conceptos manipulando las DLLs mediante los frameworks que proveen. En cambio, en C++ el desarrollador debe encargarse de cargar y liberar de memoria estas librerías, y correr los riesgos por el manejo de esta memoria. 
 - Elaborar un sistema en C++ es como construir un rascacielos: tiene buen soporte y es robusto, pero si existen errores en los pisos inferiores toda la parte superior se viene abajo terriblemente. 
