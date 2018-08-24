@@ -46,7 +46,10 @@ El compilador tiene la utilidad de leer el código fuente (C++) y transformarlo 
 Nuestra tabla de símbolo comprende código fuente C++  y las traduce a letras que van desde a la 
 (a b c d e f g h i j k l m n o p q r s t u v w x y z) y números de la  (0,1,2,3,4,5,6,7,8,9).
 
-
+# Manejo de errores
+El compilador manejo 2 tipos de errores en el programa:
+1. Si el usuario introduce una cadena vacía, el compilador manda un mensaje al usuario y le pide reintroducir una cadena valida.
+2. Si el usuario introduce algún símbolo que no está presente en la tabla (+,-,*,!,",#,$,%,etc), el compilador detiene la lectura de la cadena y manda un mensaje de error al usuario (Ejemplo: El caracter '+' no es un caracter válido) y pide al usuario introducir una cadena válida.
 
 
 
