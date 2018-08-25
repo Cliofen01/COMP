@@ -40,7 +40,7 @@ int main()
 			// Si la cadena esta vacia entonces se pido al usuario que introduzca otro.
 			sinerrores = false;
 			cout<<"No ha introducido nada aun...\n";
-			cout<<"Presione cualquier tecla para continuar...\n";
+			cout<<"Presione enter para continuar...\n";
 			getchar();
 		}
 		else if(cadena == "s")
@@ -78,7 +78,7 @@ int main()
 				{
 					cout<<"Error, \'"<<cadena[i]<<"\' no es un caracter valido\n";
 					cout<<"Introduzca una cadena valida\n";
-					cout<<"Presione cualquier tecla para continuar....\n";
+					cout<<"Presione enter para continuar....\n";
 					sinerrores = false;
 					getchar();
 					break;
@@ -90,7 +90,7 @@ int main()
 		
 		if(sinerrores&&(!salir)) {
 			// Muestra el total de los numeros introducidos y las letras ordenadas.
-			cout<<"El total de la suma de los numeros es = "<<total<<"\n";
+			cout<<"\nEl total de la suma de los numeros es = "<<total<<"\n";
 		    cout<<"\n";
 		    cout<<"Letras en orden alfabetico\n";
 		    
@@ -103,7 +103,7 @@ int main()
 		        }
 		    }
 		    
-		    cout<<"Presione cualquier tecla para continuar...\n";
+		    cout<<"Presione enter para continuar...\n";
 		    getchar();
 	 
 		}
