@@ -94,7 +94,7 @@ int main()
 		    cout<<"\n";
 		    cout<<"Letras en orden alfabetico\n";
 		    
-		    for(int cont1 = 1;cont1<26;cont1++)
+		    for(int cont1 = 0;cont1<26;cont1++)
 		    {
 		        while(orden[cont1]>0)
 		        {
@@ -123,7 +123,7 @@ void LimpiarArreglo (int *orden){
 }
 
 bool EsLetra(char *c, char caracter, int& var) {
-	for (int x = 0; x< 27; x++)
+	for (int x = 0; x< 26; x++)
 	{
 		if(caracter == c[x])
     		{
